@@ -1,1 +1,5 @@
-## C Practice file
+# C Practice file
+---
+```
+personal practice repository
+```
