@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int a = 129;
-    printf("%d",a/10);
+    int run;
+    printf("press 1 to continue\n");
+    printf("%d",scanf("%d", &run));
+    printf("%d",run);
 }

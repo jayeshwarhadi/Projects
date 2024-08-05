@@ -31,14 +31,21 @@ int main()
         {
             printf("\nThe number is not a palintrome\n");
         }
-        printf("press 1 to continue\n");
-        scanf("%d", &run);
-        if (run == 1)
+        printf("press 0 to continue\n");
+        int res = scanf("%d" , &run);
+        while (res != 1)
         {
+            printf("Invalid Input (Try Again!)\n");
+            scanf("%d", &run);
+        }
+        if (run == 0)
+        {
+            run = 1;
             continue;
         }
         else
         {
+            run = 0;
             break;
         }
     }
