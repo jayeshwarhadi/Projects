@@ -15,7 +15,7 @@ int reverse(int n)
 
 int main()
 {
-    printf("********************\n**PALINTROME TEST**\n********************\n");
+    printf("********************\n\n  PALINTROME TEST  \n\n********************\n");
     int num;
     printf("Enter the number : ");
     scanf("%d", &num);
