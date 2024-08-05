@@ -15,18 +15,32 @@ int reverse(int n)
 
 int main()
 {
-    printf("********************\n\n  PALINTROME TEST  \n\n********************\n");
-    int num;
-    printf("Enter the number : ");
-    scanf("%d", &num);
-    int rev = reverse(num);
-    if (rev == num)
+    int run = 1;
+    while (run == 1)
     {
-        printf("The number is a palintrome");
-    }
-    else
-    {
-        printf("The number is not a palintrome");
+        printf("********************\n\n  PALINTROME TEST  \n\n  (jayesh warhadi)  \n\n********************\n");
+        int num;
+        printf("Enter the number : ");
+        scanf("%d", &num);
+        int rev = reverse(num);
+        if (rev == num)
+        {
+            printf("\nThe number is a palintrome\n");
+        }
+        else
+        {
+            printf("\nThe number is not a palintrome\n");
+        }
+        printf("press 1 to continue\n");
+        scanf("%d", &run);
+        if (run == 1)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
     }
     return 0;
 }
