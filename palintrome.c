@@ -13,7 +13,7 @@ int main(){
     printf("Enter the number : ");
     scanf("%d", &num);
     reverse(num);
-
+    printf(num);
     // printf("%d",num);
     return 0;
 }
