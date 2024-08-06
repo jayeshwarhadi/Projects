@@ -15,8 +15,7 @@ int reverse(int n)
 
 int main()
 {
-    int run = 1;
-    while (run == 1)
+    while (1)
     {
         printf("********************\n\n  PALINTROME TEST  \n\n  (jayesh warhadi)  \n\n********************\n");
         int num;
