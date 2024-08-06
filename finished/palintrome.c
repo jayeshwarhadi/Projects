@@ -20,8 +20,20 @@ int main()
     {
         printf("********************\n\n  PALINTROME TEST  \n\n  (jayesh warhadi)  \n\n********************\n");
         int num;
-        printf("Enter the number : ");
-        scanf("%d", &num);
+        while (1)
+        {
+            printf("Enter the number : ");
+            int validity = scanf("%d", &num);
+            if (validity == 1)
+            {
+                break;
+            }
+            else
+            {
+                printf("Invalid Input : Try again (Integers)\n");
+                while (getchar() != '\n');
+            }
+        }
         int rev = reverse(num);
         if (rev == num)
         {
@@ -31,22 +43,24 @@ int main()
         {
             printf("\nThe number is not a palintrome\n");
         }
-        printf("press 0 to continue\n");
-        int res = scanf("%d" , &run);
-        while (res != 1)
+        int resp = 0;
+        while (1)
         {
-            printf("Invalid Input (Try Again!)\n");
-            scanf("%d", &run);
-        }
-        if (run == 0)
-        {
-            run = 1;
-            continue;
-        }
-        else
-        {
-            run = 0;
-            break;
+            printf("Press 1 to continue and 0 to exit\n");
+            int validity = scanf("%d", &resp);
+            if (validity == 1 & resp == 1)
+            {
+                break;;
+            }
+            else if (validity == 1 && resp == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                printf("Invalid input : Press 1 or 0\n");
+                while (getchar() != '\n');
+            }
         }
     }
     return 0;
